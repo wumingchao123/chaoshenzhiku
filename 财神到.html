@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<style>
+			.box {
+				width: 353px;
+				height: 400px;	
+				position:relative;
+				background: url(images/2.jpg) no-repeat;
+				margin:0 auto;
+				perspective:500px;
+
+			}
+			.left ,.right {
+				width: 50%;
+				height: 400px;
+				position: absolute;
+				background: #880c36;
+				border:2px solid #111;
+				
+			}
+			.right {
+				right: 0;
+			}
+			
+	
+			.box:hover .left  {
+					transform-origin:left;
+					transform:rotateY(-130deg);
+					box-shadow: 0 0 500px 0 yellow;
+					background:#ca841ee0;
+			}
+			.box:hover .right {
+				transform-origin:right;
+					transform:rotateY(130deg);
+					box-shadow: 0 0 500px 0 yellow;
+					background: #ca841ee0;
+			}
+			.left::before {
+				content:"";
+				position: absolute;
+				right: 30px;
+				top:50%;
+				transform:translateY(-50%);
+				width: 20px;
+				height: 20px;
+				border:3px solid #ca841ee0;
+				border-radius :50%;
+			}
+			.right::before {
+				content:"";
+				position: absolute;
+				left:30px;
+				top:50%;
+				transform:translateY(-50%);
+				width: 20px;
+				height: 20px;
+				border:3px solid #ca841ee0;
+				border-radius :50%;
+			}
+			.top	{
+				width: 353px;
+				height: 50px;
+				border:5px solid #ca841ee0;
+				margin:0 auto;
+				line-height: 50px;
+				background-color: #880c36;
+				text-align: center;
+				font-size: 30px;
+				font-weight: 900;
+				letter-spacing: 20px;
+				color:yellow;
+			}
+			.box:hover  {
+				box-shadow: 0 0 500px 0 yellow;
+			}
+
+		</style>
+</head>
+<body>
+		<div class="top">
+				开门大吉
+		</div>
+		<div class="box">
+				<div class="left">
+						
+				</div>
+				<div class="right">
+						
+				</div>
+		</div>
+</body>
+</html>
