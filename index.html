@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 1500px;
+            background-color: #111;
+        }
+        .da {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            margin:50px auto;
+            /* background: #ccc; */
+            transform-style: preserve-3d;
+            transition: all 2s;
+           animation: zhuan 10s linear infinite;
+           
+        }
+
+        .box { 
+           
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+             font-size: 300px;
+            line-height: 500px;
+            text-align:center;
+            color:red;
+            border-radius:20px;
+            border:5px solid #ccc;
+           
+
+           
+        }
+        @keyframes zhuan {
+          from {
+              transform: rotateX(0deg);
+          }
+          to {
+            transform: rotate3d(1,1,0,360deg);
+          }
+        }
+        .box:first-child {
+            transform:translateZ(250px);
+        }
+        .box:nth-child(2) {
+            transform:translateZ(-250px) rotateY(180deg);
+        }
+        .box:nth-child(3) {
+            transform:translateX(-250px) rotateY(-90deg);
+        }
+        .box:nth-child(4) {
+            transform:translateX(250px) rotateY(90deg);
+        }
+        .box:nth-child(5) {
+            transform:translateY(-250px) rotateX(90deg);
+        }
+        .box:nth-child(6) {
+            transform:translateY(250px) rotateX(-90deg);
+        }
+     .yi {
+          
+          width: 200px;
+          height: 200px;
+          position: absolute;
+          left:50%;
+          top: 50%;
+          transform:translate(-50%,-50%);
+
+          
+          background-color: red;
+          border-radius: 50%;
+      }
+      .er {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform:translate(-50%,-50%);
+          background-color: blue;
+          border-radius: 50%;
+      }
+      .yyy {
+          top: 150px;
+      }
+      .eee {
+          top:350px;
+      }
+      .san {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform:translate(-50%,-50%);
+          background-color:red;
+          border-radius: 50%;
+      }
+      .yiy {
+          top: 125px;
+          left: 125px;
+      }
+      
+    
+      .sas {
+          top: 375px;
+          left: 375px;
+      }
+      .si {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform:translate(-50%,-50%);
+          background-color:blue;
+          border-radius: 50%;
+      }
+      .sy {
+         top: 125px;
+         left: 125px;  
+      }
+      .se {
+          top: 125px;
+          left: 375px;
+      }
+      .ssa {
+          top: 375px;  
+          left: 125px;
+      }
+      .ssi {
+            top: 375px; 
+            left: 375px;
+      }
+     .wu {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform:translate(-50%,-50%);
+          background-color:red;
+          border-radius: 50%;
+      }
+      .wuy {
+          top: 125px;
+          left: 125px;
+      }
+      .wue {
+          top: 125px;
+          left: 375px;
+      }
+      .wusa {
+          top: 375px;
+          left: 125px;
+      }
+      .wus {
+          top: 375px;
+          left: 375px;
+      }
+      .lu {
+          width: 80px;
+          height: 80px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform:translate(-50%,-50%);
+          background-color:red;
+          border-radius: 50%;
+      }
+      .luy {
+          top: 125px;
+          left: 125px;
+      }
+      .lue {
+          top: 125px;
+          left: 250px;
+      }
+      .lusa {
+          top: 125px;
+          left: 375px;
+      }
+      .lus {
+          top: 375px;
+          left: 125px;
+      }
+      .luw {
+          top: 375px;
+          left: 250px;
+      }
+      .lul {
+          top: 375px;
+          left: 375px;
+      }
+    </style>
+</head>
+
+<body>
+    <div class="da">
+        <div class="box">
+
+            <span class="yi"></span>
+        </div>
+        <div class="box">
+            <div class="er yyy"></div>
+            <div class="er eee"></div>
+        </div>
+        <div class="box">
+            <div class="san yiy"></div>
+            <div class="san ere"></div>
+            <div class="san sas"></div>
+        </div>
+        <div class="box">
+            <div class="si sy"></div>
+            <div class="si se"></div>
+            <div class="si ssa"></div>
+            <div class="si ssi"></div>
+        </div>
+        <div class="box">
+            <div class="wu wuy"></div>
+            <div class="wu wue "></div>
+            <div class="wu wusa"></div>
+            <div class="wu wus"></div>
+            <div class="wu wuw"></div>
+        </div>
+        <div class="box">
+            <div class="lu luy"></div>
+            <div class="lu lue"></div>
+            <div class="lu lusa"></div>
+            <div class="lu lus"></div>
+            <div class="lu luw"></div>
+            <div class="lu lul"></div>
+        </div>
+    </div>
+</body>
+
+</html>
